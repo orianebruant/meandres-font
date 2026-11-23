@@ -4,6 +4,10 @@ Une typographie manuscrite, créée à la main par Oriane Bruant, libre et gratu
 
 A handwritten typeface, hand-drawn by Oriane Bruant, free for everyone to use.
 
+![Méandres, typographie manuscrite libre et gratuite](meandres_font.png)
+
+🌐 **Page de présentation / Specimen page:** https://orianebruant.github.io/meandres-font/
+
 ## Télécharger / Download
 
 ➡️ [**Dernière version / Latest release**](../../releases/latest)
@@ -12,6 +16,14 @@ Fichiers fournis / Files included:
 
 - `Meandres-Regular.ttf` : pour installer la police sur un ordinateur / for desktop use
 - `Meandres-Regular.woff2` : pour les sites web / for websites
+
+## Structure du dépôt
+
+- `Meandres-Regular.ttf`, `Meandres-Regular.woff2` : fichiers de la police
+- `OFL.txt` : licence
+- `index.html` : page de présentation (GitHub Pages)
+- `meandres_font.png` : image d'aperçu de la police
+- `sources/` : fichiers de travail pour retravailler la police, dont la feuille de glyphes dessinés [`Meandres_glyphes.svg`](sources/Meandres_glyphes.svg)
 
 ## Utilisation / License
 

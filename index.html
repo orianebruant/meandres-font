@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Méandres — une typographie manuscrite libre et gratuite</title>
+<meta name="description" content="Méandres est une typographie manuscrite dessinée à la main, libre et gratuite (licence SIL OFL) pour vos projets personnels et commerciaux.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Méandres — une typographie manuscrite libre et gratuite">
+<meta property="og:description" content="Dessinée à la main, libre et gratuite (licence SIL OFL), pour vos projets personnels et commerciaux.">
+<meta property="og:image" content="https://orianebruant.github.io/meandres-font/meandres_font.png">
+<meta property="og:url" content="https://orianebruant.github.io/meandres-font/">
+<style>
+@font-face{
+  font-family:"Meandres";
+  src:url("Meandres-Regular.woff2") format("woff2"),
+      url("Meandres-Regular.ttf") format("truetype");
+  font-display:swap;
+}
+:root{
+  --bg:#faf7f2; --ink:#1d1b19; --muted:#6b645c; --card:#ffffff; --line:#e4ddd2; --accent:#2f5d62;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#171614; --ink:#f1ece4; --muted:#a39b90; --card:#201e1b; --line:#37332e; --accent:#8cc5c9; }
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:960px;margin:0 auto;padding:clamp(20px,5vw,56px)}
+h1{font-family:"Meandres",cursive;font-weight:normal;font-size:clamp(64px,16vw,168px);line-height:1;margin:0 0 .1em}
+h2{font-size:14px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:2.6em 0 .8em;font-weight:600}
+.lead{font-size:1.15em;max-width:36em;color:var(--muted);margin:0 0 1.4em}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin:1.2em 0}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;border:1.5px solid var(--accent);color:var(--accent);text-decoration:none;font-weight:600}
+.btn.primary{background:var(--accent);color:var(--bg)}
+.btn:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:clamp(16px,3vw,28px)}
+textarea{width:100%;min-height:9em;border:0;background:transparent;color:var(--ink);font-family:"Meandres",cursive;font-size:64px;line-height:1.15;resize:vertical}
+.ctl{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:15px;margin-top:10px;flex-wrap:wrap}
+.ctl input{accent-color:var(--accent)}
+.glyphs{font-family:"Meandres",cursive;font-size:clamp(34px,6vw,54px);line-height:1.35;word-break:break-all;margin:0}
+.sizes p{font-family:"Meandres",cursive;margin:.2em 0}
+.licence{color:var(--muted);font-size:15px}
+.licence a,footer a{color:var(--accent)}
+footer{margin-top:3em;color:var(--muted);font-size:14px}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Méandres</h1>
+  <p class="lead">Une typographie manuscrite dessinée à la main, libre et gratuite. Utilisez-la pour vos titres, affiches, livres, sites ou produits, à titre personnel comme commercial.</p>
+  <div class="btns">
+    <a class="btn primary" href="Meandres-Regular.ttf" download>Télécharger la police (.ttf)</a>
+    <a class="btn" id="releases" href="#">Toutes les versions</a>
+    <a class="btn" href="OFL.txt">Licence (SIL OFL)</a>
+  </div>
+
+  <h2>Essayez-la</h2>
+  <div class="card">
+    <textarea id="t" aria-label="Texte à essayer" spellcheck="false">Les méandres d’une rivière, entre « rêve » et réalité…
+Prix : 12,50 € — 0123456789</textarea>
+    <div class="ctl"><label for="s">Taille</label><input id="s" type="range" min="20" max="160" value="64"><span id="sv">64 px</span></div>
+  </div>
+
+  <h2>Lettres</h2>
+  <div class="card"><p class="glyphs">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>ÀÂÇÈÉÊËÎÏÔÙÛÜŒ àâçèéêëîïôùûüœ</p></div>
+
+  <h2>Chiffres et symboles</h2>
+  <div class="card"><p class="glyphs">0123456789<br>. , ; : ! ? ’ “ ” « » ( ) - – — … + = # * _ € $</p></div>
+
+  <h2>Tailles</h2>
+  <div class="card sizes">
+    <p style="font-size:96px">Méandres</p>
+    <p style="font-size:48px">Une typographie dessinée à la main</p>
+    <p style="font-size:28px">Les petits chats flânent près du lac, l’été venu.</p>
+    <p style="font-size:20px">Pour les titres et les textes courts, elle donne un ton chaleureux et personnel.</p>
+  </div>
+
+  <h2>Licence</h2>
+  <p class="licence">Méandres est distribuée sous licence <a href="OFL.txt">SIL Open Font License 1.1</a> : utilisation gratuite, personnelle ou commerciale, partage et modification autorisés, à condition de conserver la licence avec la police. La police ne peut pas être vendue seule.</p>
+
+  <footer>© 2026 The Meandres Project Authors — <a href="mailto:oriane.bruant@gmail.com">oriane.bruant@gmail.com</a></footer>
+</main>
+<script>
+(function(){
+  var t=document.getElementById("t"),s=document.getElementById("s"),sv=document.getElementById("sv");
+  function set(){t.style.fontSize=s.value+"px";sv.textContent=s.value+" px";}
+  s.addEventListener("input",set);set();
+  // Lien vers les versions GitHub, déduit de l’adresse de la page (nom.github.io/depot/)
+  try{
+    var h=location.hostname,p=location.pathname.split("/")[1];
+    if(/\.github\.io$/.test(h)&&p){document.getElementById("releases").href="https://github.com/"+h.split(".")[0]+"/"+p+"/releases";}
+    else{document.getElementById("releases").style.display="none";}
+  }catch(e){document.getElementById("releases").style.display="none";}
+})();
+</script>
+</body>
+</html>
